@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#bdd4de</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#d4d4d4</color>
+    <color name="app_background">#d2c199e2</color>
+    <color name="cell_selected_color">#f5c84a</color>
+    <color name="sebzeh_blue_color">#65c7ed</color>
+    <color name="sebzeh_red_color">#ff444a</color>
+    <color name="game_option_text_color">#615e5e</color>
+</resources>

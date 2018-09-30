@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    tools:context="com.example.solid.mindgame.ui.mainAcitivty.MainFragment">
+    <!--<FrameLayout-->
+    <!--android:layout_margin="16dp"-->
+    <!--android:background="@drawable/board_background"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/crossRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/tipTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/answerRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </RelativeLayout>
+
+
+    <!--</FrameLayout>-->
+</LinearLayout>
