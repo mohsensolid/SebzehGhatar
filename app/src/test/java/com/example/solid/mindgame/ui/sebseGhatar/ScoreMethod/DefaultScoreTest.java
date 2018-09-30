@@ -18,6 +18,7 @@ import java.lang.reflect.Field;
 
 import static org.mockito.Mockito.verify;
 
+
 public class DefaultScoreTest {
     private Step[] DEFUALT_TEST_DIRECTIONS = new Step[]{
             new Step(1, 0),
