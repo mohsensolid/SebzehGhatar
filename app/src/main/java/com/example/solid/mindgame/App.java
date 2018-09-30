@@ -38,7 +38,7 @@ public class App extends Application
         this.applicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
 //                .netModule(new NetModule("ws://10.0.2.2:8000/ws/game/random/"))
-                .netModule(new NetModule("wss://morning-crag-78586.herokuapp.com/ws/game/random/"))
+                .netModule(new NetModule("wss://sebse-ghatar.herokuapp.com/ws/game/random/"))
                 .build();
 
     }
