@@ -1,77 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/gameOptionsSection"
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/gameOptionsHeight">
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/gameReset"
-        style="@style/gameOptionItemHolderStyle"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/onlineGame"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/gameOptionsSection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gameOptionsHeight"
+        tools:layout_editor_absoluteY="25dp">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            style="@style/gameOptionImageStyle"
-            app:srcCompat="@drawable/ic_refresh_black_24dp" />
+        <LinearLayout
+            android:id="@+id/gameReset"
+            style="@style/gameOptionItemHolderStyle"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/onlineGame"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
-            style="@style/gameOptionsTextStyle"
-            android:text="ریست" />
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/gameOptionImageStyle"
+                app:srcCompat="@drawable/ic_refresh_black_24dp" />
 
-    <LinearLayout
-        android:id="@+id/onlineGame"
-        style="@style/gameOptionItemHolderStyle"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/twoPlayer"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/gameReset"
-        app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/textView"
+                style="@style/gameOptionsTextStyle"
+                android:text="ریست" />
+        </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView3"
-            style="@style/gameOptionImageStyle"
-            app:srcCompat="@drawable/ic_online_people_black_24dp" />
+        <LinearLayout
+            android:id="@+id/aiGame"
+            style="@style/gameOptionItemHolderStyle"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/twoPlayer"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/onlineGame"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView2"
-            style="@style/gameOptionsTextStyle"
-            android:text="انلاین" />
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/gameOptionImageStyle"
+                app:srcCompat="@drawable/ic_android_24dp" />
 
-    <LinearLayout
-        android:id="@+id/twoPlayer"
-        style="@style/gameOptionItemHolderStyle"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/onlineGame"
-        app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/gameOptionsTextStyle"
+                android:text="بات" />
+        </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView5"
-            style="@style/gameOptionImageStyle"
-            app:srcCompat="@drawable/ic_two_player_black_24dp" />
+        <LinearLayout
+            android:id="@+id/onlineGame"
+            style="@style/gameOptionItemHolderStyle"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/aiGame"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/gameReset"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView4"
-            style="@style/gameOptionsTextStyle"
-            android:text="دو نفره" />
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView3"
+                style="@style/gameOptionImageStyle"
+                app:srcCompat="@drawable/ic_online_people_black_24dp" />
 
-</android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/gameOptionsTextStyle"
+                android:text="انلاین" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/twoPlayer"
+            style="@style/gameOptionItemHolderStyle"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/aiGame"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                style="@style/gameOptionImageStyle"
+                app:srcCompat="@drawable/ic_two_player_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/gameOptionsTextStyle"
+                android:text="دو نفره" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</HorizontalScrollView>

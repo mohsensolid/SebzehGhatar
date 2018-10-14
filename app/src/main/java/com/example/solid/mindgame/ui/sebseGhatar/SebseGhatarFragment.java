@@ -310,7 +310,10 @@ public class SebseGhatarFragment extends BaseFragment<SebseGhatarPresenter> impl
     void onlineGameClicked() {
         mPresenter.onlineGame();
     }
-
+    @OnClick(R.id.aiGame)
+    void aiGameClicked(){
+        mPresenter.aiGame();
+    }
     @OnClick(R.id.twoPlayer)
     void twoPlayerClicked() {
         mPresenter.twoPlayerGame();

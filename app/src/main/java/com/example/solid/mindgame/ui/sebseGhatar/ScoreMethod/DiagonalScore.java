@@ -4,6 +4,7 @@
 
 package com.example.solid.mindgame.ui.sebseGhatar.ScoreMethod;
 
+
 public class DiagonalScore extends ScoreManagerBase implements ScoreManager {
     private ScoreListener mListener;
 
@@ -53,4 +54,16 @@ public class DiagonalScore extends ScoreManagerBase implements ScoreManager {
     public void dispose() {
         mListener = null;
     }
+
+    @Override
+    public int EvaluateBoard(int[][] board) {
+        return super.EvaluateBoard(board);
+    }
+
+    @Override
+    public int[][] getBoard() {
+        return super.getBoard();
+    }
+
+
 }

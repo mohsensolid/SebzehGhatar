@@ -17,6 +17,7 @@ import org.mockito.MockitoAnnotations;
 import java.lang.reflect.Field;
 
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 
 public class DefaultScoreTest {
@@ -42,6 +43,7 @@ public class DefaultScoreTest {
         MockitoAnnotations.initMocks(this);
         defaultScore = new DefaultScore();
         defaultScore.start(presenter);
+
     }
 
     @Test

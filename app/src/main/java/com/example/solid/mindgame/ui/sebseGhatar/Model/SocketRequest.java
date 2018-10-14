@@ -4,7 +4,10 @@
 
 package com.example.solid.mindgame.ui.sebseGhatar.Model;
 
+import android.support.annotation.Keep;
+
 import com.google.gson.annotations.Expose;
+@Keep
 
 public class SocketRequest {
     @Expose

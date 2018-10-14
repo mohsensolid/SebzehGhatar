@@ -5,6 +5,7 @@
 package com.example.solid.mindgame.ui.sebseGhatar.ScoreMethod;
 
 
+import com.example.solid.mindgame.ui.sebseGhatar.Model.AiMove;
 
 public class DefaultScore extends ScoreManagerBase implements ScoreManager {
     private ScoreListener mListener;
@@ -29,6 +30,16 @@ public class DefaultScore extends ScoreManagerBase implements ScoreManager {
     }
 
     @Override
+    public int EvaluateBoard(int[][] board) {
+        return super.EvaluateBoard(board);
+    }
+
+    @Override
+    public int[][] getBoard() {
+        return super.getBoard();
+    }
+
+    @Override
     protected Step[] directions() {
         return new Step[]{
                 new Step(1, 0),
@@ -37,7 +48,7 @@ public class DefaultScore extends ScoreManagerBase implements ScoreManager {
     }
 
     @Override
-    protected void gameIsDone(int blueScore,int redScore) {
+    protected void gameIsDone(int blueScore, int redScore) {
         mListener.gameIsEnded(blueScore, redScore);
     }
 
@@ -47,7 +58,7 @@ public class DefaultScore extends ScoreManagerBase implements ScoreManager {
         mListener.blueScore(blueScore);
     }
 
-      @Override
+    @Override
     public void resetTheGame() {
         super.resetTheGame();
     }

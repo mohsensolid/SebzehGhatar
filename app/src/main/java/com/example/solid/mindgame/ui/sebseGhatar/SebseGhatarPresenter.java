@@ -14,6 +14,7 @@ import com.example.solid.mindgame.ui.sebseGhatar.gameMethod.GameListener;
 import com.example.solid.mindgame.ui.sebseGhatar.gameMethod.GameManager;
 import com.example.solid.mindgame.ui.sebseGhatar.gameMethod.LocalGameManager;
 import com.example.solid.mindgame.ui.sebseGhatar.gameMethod.OnlineGameManager;
+import com.example.solid.mindgame.ui.sebseGhatar.gameMethod.ai.aiGameManager;
 
 import javax.inject.Inject;
 
@@ -94,6 +95,15 @@ public class SebseGhatarPresenter extends RxPresenter<SebseGhatarContract.View> 
         mView.hideChatBox();
         mView.hideOpponentFinde();
 
+    }
+
+    @Override
+    public void aiGame() {
+        reset();
+        gameManager = new aiGameManager(scoreManager);
+        gameManager.start(this);
+        mView.hideChatBox();
+        mView.hideOpponentFinde();
     }
 
     @Override

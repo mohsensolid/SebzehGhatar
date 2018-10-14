@@ -32,5 +32,6 @@ public interface SebseGhatarContract {
         void resetTheGame();
         void onlineGame();
         void twoPlayerGame();
+        void aiGame();
     }
 }
