@@ -25,38 +25,18 @@ public class aiGameManagerTest {
     @Mock
     private
     SebseGhatarPresenter mPresenter;
-//    @Mock
-//    private
     DefaultScore scoreManager;
     private aiGameManager gameManager;
-    private DefaultScore scoreManager1;
 
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
-        scoreManager1 = new DefaultScore();
-        scoreManager1.start(mPresenter);
-        gameManager = new aiGameManager(scoreManager1);
+        scoreManager = new DefaultScore();
+        scoreManager.start(mPresenter);
+        gameManager = new aiGameManager(scoreManager);
         gameManager.start(mPresenter);
     }
 
-    @Test
-    public void aiPickEasyWin() {
-        scoreManager1.cellChangeAt(2,2,3,RED_PLAYER);
-        scoreManager1.cellChangeAt(2,2,2,BLUE_PLAYER);
-//        Mockito.when(scoreManager.getBoard()).thenReturn(new int[][]{
-//                {-1, 0, 0, -1, 0, 0, -1},
-//                {0, -1, 0, -1, 0, -1, 0},
-//                {0, 0, -1, -1, -1, 0, 0},
-//                {-1, -1, -1, 8, -1, -1, -1},
-//                {0, 0, -1, -1, -1, 0, 0},
-//                {0, -1, 0, -1, 0, 5, 0},
-//                {-1, 0, 0, -1, 0, 0, 2},
-//        });
-        gameManager.cellClickedAt(1, 2, 3);
-
-        verify(mPresenter).changeItemAt(0, 2, 3, BLUE_PLAYER);
-    }
 
     @Test
     public void isYourTurn() {

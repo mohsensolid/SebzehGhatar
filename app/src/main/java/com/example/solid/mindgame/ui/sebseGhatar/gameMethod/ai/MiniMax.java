@@ -29,7 +29,7 @@ public class MiniMax {
                     int mCol = (layer * col) + 3 - layer;
                     if (board[mRow][mCol] == -1) {
                         board[mRow][mCol] = PersistenceContract.SebseGhatar.BLUE_PLAYER_NUMBER;
-                        int moveValue = minimax(3, false, board, MIN, MAX);
+                        int moveValue = minimax(2, false, board, MIN, MAX);
                         board[mRow][mCol] = -1;
                         if (moveValue > bestValue) {
                             bestValue = moveValue;

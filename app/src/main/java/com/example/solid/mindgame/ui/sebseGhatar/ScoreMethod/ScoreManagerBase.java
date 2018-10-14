@@ -72,7 +72,7 @@ public abstract class ScoreManagerBase {
                 }
             }
         }
-        return ((aiScore * 170) + (aiTwo * 20)) - ((playerScore * 240) + (playerTwo * 20));
+        return ((aiScore * 600) + (aiTwo * 10)) - ((playerScore * 1200) + (playerTwo * 10));
     }
 
     private void checkForScore(int[][] board) {
