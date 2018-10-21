@@ -3,6 +3,7 @@ android java
 - mvp
 - dagger
 - unittesting
+- minimax
 - espresso
 - websockets
 
