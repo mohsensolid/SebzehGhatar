@@ -8,6 +8,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import com.example.solid.mindgame.R;
@@ -15,11 +16,10 @@ import com.example.solid.mindgame.ui.sebseGhatar.Model.ChatModel;
 import butterknife.BindDrawable;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import io.github.rockerhieu.emojicon.EmojiconTextView;
 
 public class ChatItem extends RelativeLayout {
     @BindView(R.id.messageTxt)
-    EmojiconTextView msg_content;
+    EditText msg_content;
     @BindDrawable(R.drawable.balloon_hangout_block_incoming)
     Drawable incomingMsg;
     @BindDrawable(R.drawable.balloon_hangout_block_outgoing)

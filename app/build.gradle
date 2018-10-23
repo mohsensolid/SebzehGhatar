@@ -7,7 +7,7 @@ android {
         applicationId "com.example.solid.mindgame"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 6
+        versionCode 7
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         testOptions {
@@ -46,7 +46,6 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttpVersion"
     implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
     implementation "uk.co.chrisjenx:calligraphy:$rootProject.ext.calligraphyVersion"
-    implementation "io.github.rockerhieu:emojicon:$rootProject.ext.emojiconVersion"
     implementation "com.android.support:recyclerview-v7:$rootProject.ext.supportLibraryVersion"
     implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
     implementation "com.android.support:support-v4:$rootProject.ext.supportLibraryVersion"

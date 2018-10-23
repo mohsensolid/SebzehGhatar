@@ -10,6 +10,7 @@ import com.google.gson.annotations.Expose;
 @Keep
 
 public class SocketRequest {
+
     @Expose
     private String type;
     @Expose

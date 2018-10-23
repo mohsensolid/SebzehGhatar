@@ -103,7 +103,7 @@ public class SebseGhatarFragment extends BaseFragment<SebseGhatarPresenter> impl
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_sebse_ghatar, container, false);
+        View view = inflater.inflate(R.layout.fragment_main, container, false);
         unbinder = ButterKnife.bind(this, view);
         return view;
     }

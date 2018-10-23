@@ -53,7 +53,6 @@ public class SabzehCircle extends FrameLayout {
 
     public interface SebzehListener {
         boolean isYourTurn();
-
         void cellClickedAt(int currentLayer, int currentRow, int currentCol);
     }
 
